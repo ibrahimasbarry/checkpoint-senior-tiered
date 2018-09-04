@@ -2,16 +2,16 @@
 
 const utils = {};
 
-utils.getInitials = () => {
-  //your code here
-};
+utils.getInitials = (str) => ({
+	//your code here
+});
 
 utils.generateGroups = () => {
-  //your code here
+	//your code here
 };
 
 utils.throttle = () => {
-  //your code here
+	//your code here
 };
 
 module.exports = utils;
