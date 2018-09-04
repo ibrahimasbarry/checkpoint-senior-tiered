@@ -18,4 +18,11 @@ router.get('/:id', async (req, res, next) => {
 	res.json(singleCampus);
 });
 
+router.get('/:id/students', (req, res, next) => {
+	let singleCampus = Campus.findById(req.params.id);
+	let allAssociated = singleCampus.findAll({ include: { all: Student } });
+	Promise.all([ singleCampus, allAssociated ]);
+	res.json(allAssociated);
+});
+
 module.exports = router;

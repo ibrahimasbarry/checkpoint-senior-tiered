@@ -9,9 +9,10 @@ export const setCampuses = (campuses) => ({
 	campuses
 });
 
-export const selectCampus = () => {
+export const selectCampus = () => ({
+	type: SELECT_CAMPUS
 	//you code here
-};
+});
 
 export const addCampus = () => {
 	//your code here
